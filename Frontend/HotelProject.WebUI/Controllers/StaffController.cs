@@ -40,7 +40,7 @@ namespace HotelProject.WebUI.Controllers
             var responseMessage = await client.PostAsync("http://localhost:32265/api/Staff", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
-				return RedirectToAction("Index");
+				return RedirectToAction("Index");   
 
 			}
             return View();
